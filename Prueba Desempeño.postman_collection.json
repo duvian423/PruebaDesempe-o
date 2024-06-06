@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "6a4c4c26-cc5b-4b28-a34b-e0bce0ce1c6c",
+		"name": "Prueba Desempeño",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32234369"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "GetAllStudents",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetStudentById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/student/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"student",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllEnrollmentByStudent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/studentss/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"studentss",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "CreateStudent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"names\": \"postman Lopez\",\r\n        \"birthDate\": \"1991-04-23T00:00:00\",\r\n        \"address\": \"cll54b-2345\",\r\n        \"email\": \"duvian@correo.com\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"students"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "UpdateStudentById",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"id\": 6,\r\n        \"names\": \"el postmitan\",\r\n        \"birthDate\": \"1991-04-23T00:00:00\",\r\n        \"address\": \"cll54b-2345\",\r\n        \"email\": \"duvian@correo.com\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/students/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"students",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teachers",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "GetAllTeachers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/teachers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"teachers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetTeacherById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/teachers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"teachers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCoursesByTeacher",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/teacherss/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"teacherss",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "CreateTeacher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"names\": \"crear otro nuevo2\",\r\n        \"speciality\": \"string\",\r\n        \"phone\": \"string\",\r\n        \"email\": \"string\",\r\n        \"yearExperience\": 5\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/teachers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"teachers"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"id\": 6,\r\n        \"names\": \"string\",\r\n        \"speciality\": \"el actualizado de postman\",\r\n        \"phone\": \"este dato es nuevo\",\r\n        \"email\": \"string\",\r\n        \"yearExperience\": 3\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/teachers/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"teachers",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "GetAllCourses",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"courses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCourseById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/courses/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"courses",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "CreateCourse",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"name\": \"nueva materia\",\r\n        \"description\": \"se enseña naturales\",\r\n        \"teacherId\": 1,\r\n        \"schedule\": \"nuevo cronograma\",\r\n        \"duration\": 3,\r\n        \"capacity\": 25\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"courses"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "UpdateCourse",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 7,\r\n        \"name\": \"nueva materia actulizada\",\r\n        \"description\": \"se enseña naturales\",\r\n        \"teacherId\": 1,\r\n        \"schedule\": \"nuevo cronograma\",\r\n        \"duration\": 3,\r\n        \"capacity\": 25\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/course/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"course",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Enrollments",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "GetAllEnrollments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"enrollments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetEnrollmentById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5199/api/enrollments/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"enrollments",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "CreateEnrollment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"date\": \"2019-01-01T00:00:00\",\r\n        \"studentId\": 2,\r\n        \"courseId\": 3,\r\n        \"status\": \"pagada\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"enrollments"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "UpdateEnrollmentById",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"id\": 6,\r\n        \"date\": \"2019-01-01T00:00:00\",\r\n        \"studentId\": 2,\r\n        \"courseId\": 3,\r\n        \"status\": \"cancelada\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5199/api/enrollments/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5199",
+									"path": [
+										"api",
+										"enrollments",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
